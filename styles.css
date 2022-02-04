@@ -177,6 +177,7 @@ button {
   height: 180px;
   margin-top: -80px;
   margin-bottom: 40px;
+  border-radius: 10px;
 }
 
 .loading-wrap {
