@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+
+:root {
+  --moderate-cyan: hsl(176, 50%, 47%);
+  --dark-cyan: hsl(176, 72%, 28%);
+  --black-color: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 48%);
+  --font-family: "Commissioner", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  background-color: rgba(248, 248, 248, 0.7);
+  font-family: var(--font-family);
+}
+
+p {
+  color: var(--dark-gray);
+}
+
+.wrapper {
+  height: 100vh;
+}
+/* 
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/image-hero-desktop.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+} */
+
+.hero-img {
+  background: url("/images/image-hero-desktop.jpg") no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+}
+
+header {
+  width: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: aqua;
+}
+
+.menu-bar {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  display: none;
+}
+
+.menu-bar div {
+  height: 3px;
+  background-color: white;
+}
+
+section {
+  width: 700px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.description {
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  border-radius: 10px;
+}
+
+.description .desc-logo {
+  width: 25px;
+  height: 25px;
+  transform: translateY(-30px);
+}
+
+.description h1 {
+  font-size: 24px;
+  font-family: var(--font-family);
+}
+
+.description .btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 30px 30px;
+}
+
+button {
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--moderate-cyan);
+  color: white;
+  cursor: pointer;
+}
+
+.bookmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark button {
+  background-color: lightgray;
+  height: 45px;
+  width: 150px;
+}
+
+.bookmark img {
+  width: 45px;
+  height: 46px;
+  margin-right: -35px;
+  z-index: 100;
+}
+
+.loading {
+  height: 180px;
+  margin-top: -80px;
+  margin-bottom: 40px;
+}
+
+.loading-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 30px 30px 30px;
+}
+
+.fact-detail h1 {
+  margin-bottom: 5px;
+}
+
+.border {
+  width: 2px;
+  height: 70px;
+  background-color: lightgray;
+}
+
+.loading .load-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: lightgrey;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loading .load-bar::before {
+  content: "";
+  width: 85%;
+  height: 100%;
+  background-color: var(--moderate-cyan);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.about {
+  height: calc(100vh + 400px);
+  padding: 30px;
+}
+
+.about .about-wrap .about .about-wrap h2 {
+  margin-bottom: 30px;
+  height: 100vh;
+}
+
+.about .about-wrap p {
+  margin-bottom: 40px;
+}
+
+.about-section {
+  width: 100%;
+  height: 250px;
+  border: 1px solid lightgray;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+.about .about-section .pricing-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.pricing-section span {
+  color: var(--moderate-cyan);
+}
+
+.CA {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .mahogany h2 {
+  color: var(--dark-gray);
+  color: lightgrey;
+} */
+
+.mahogany button {
+  background-color: lightgray;
+}
+
+.left {
+  font-size: 12px;
+  color: var(--dark-gray);
+}
+
+.special {
+  color: darkgray;
+}
+
+.CA h2 span {
+  display: inline-block;
+  transform: translateY(-30%);
+}
